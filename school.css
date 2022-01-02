@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* includes any padding or margin to total height and width */
+}
+
+:root {
+--section: hsl(123, 56%,65%,.6);
+--main: /*rgba(190, 177, 51, 0.7),*/ #be8625;
+--header: #f1cf93;
+--some-section: hsl(247, 75%, 55%,.8);
+--some-gray: hsl(16, 1%, 75%, .8);
+--white: hsl(1,100%, 100%,1);
+--blackish: hsl(0,0%,0%,0);
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.19rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(326deg, var(--header), var(--some-gray), var(--main), var(--some-section));
+    z-index: 1;
+}
+
+#description {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+.linker {
+    text-decoration: none;
+    color: #000;
+    transition: color 1s;
+}
+
+.linker:hover {
+    color: var(--white);
+}
+
+.diver  {
+    display: block;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 1s;
+}
+
+.diver:hover {
+    background-color: var(--some-section);
+    cursor: pointer;
+    color: var(--white);
+}
+
+
+
+.administration > .go {
+    display: block;
+    height: fit-content;
+}
+
+/* main document styles */
+
+#main-doc {
+    margin: 150px auto;
+    margin-bottom: 0;
+}
+
+.sectioner {
+    background-color: green;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+}
+.welcome {
+    bleed: var(--some-gray);
+    background: url('./images/welcome.jpg') center no-repeat, #050;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+section {
+    width: 100%;
+}
+
+.begin-text {
+    display: flex;
+    align-items: center;
+}
+
+.unmatched-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    height: 70%;
+    font-size: 2.5rem;
+    font-style: oblique;
+    margin-left: 20px;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    position: absolute;
+    left: 35%;
+}
+#begin {
+    position: relative;
+    top: 30%;
+    left: 40%;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    border: none;
+    font-size: 18px;
+    transition: background-color 1s;
+    background-color: var(--header);
+}
+
+#begin:hover {
+    cursor: pointer;
+    background-color: var(--main);
+    background-image: linear-gradient(326deg, var(--header), var(--some-gray), var(--main), var(--some-section));
+
+}
+
+.activities-section {
+    display: flex;
+    background: url('./images/school-games-one.jpg') center no-repeat, #050;
+    background-size: cover;
+    background-attachment: scroll;
+
+}
+
+
+#btn-activities {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#btn-acts {
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    border: none;
+    font-size: 18px;
+    transition: background-color 1s;
+    background-color: var(--header);
+}
+
+#btn-acts:hover {
+    cursor: pointer;
+    background-color: var(--main);
+    background-image: linear-gradient(326deg, var(--header), var(--some-gray), var(--main), var(--some-section));
+
+
+}
+
+.nature-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    height: 70%;
+    font-size: 2.5rem;
+    font-style: oblique;
+    position: relative;
+    top: 30%;
+    left: 10%;
+    color: wheat;
+
+}
+
+.performance {
+    background: url('./images/school-space.jpg') center no-repeat, #050;
+    background-size: cover;
+    background-attachment: scroll;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.billboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url('./images/school-two.jpg') center no-repeat, #050;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.i-mg {
+    border-radius: 8px;
+
+}
+.bill-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-metrics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.billboard-list {
+    border: 10px solid #00f;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    width: 20%;
+    height: 60%;
+}
+
+.jo {
+    color: #000;
+    text-decoration: none;
+    transition: border-bottom .1s;
+}
+
+.jo:hover {
+    border-bottom: 2px solid #00f;
+}
+
+/*footer styles */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+}
+.foo {
+    list-style-type: none;
+    padding: 20px;
+}
+.lin {
+    color: #fff;
+
+}
+
